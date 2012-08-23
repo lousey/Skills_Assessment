@@ -1,0 +1,145 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<link href="assets/contact_widget.css" rel="stylesheet" type="text/css" media="screen"/>	
+<title>Contact Widget</title>
+<script src="assets/domready.js" type="text/javascript"></script>
+<script type="text/javascript">
+	DomReady.ready(function() {
+		var contactWidget = document.getElementById("cw_select");
+		contactWidget.selectedIndex = 0;
+		contactWidget.onchange = function() { 
+		 var chosenoption = this.options[this.selectedIndex]; 
+		 if (chosenoption.value=="email") {
+			document.getElementById("cw_list").className = "cw_email_state";
+		 } else {
+			document.getElementById("cw_list").className = "cw_telephone_state";
+		 }
+		};
+	});
+</script>
+</head>
+<body>
+<div id="contact_widget">
+	<h3>Contacts</h3>
+	<ul id="cw_list" class="cw_email_state">
+		<li>
+			<div class="cw_name">
+				<span class="cw_dot cw_green">&#8226;</span>Christian
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">christian@yahoo.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:christian@yahoo.com">christian@yahoo.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li class="cw_alternate">
+			<div class="cw_name">
+				<span class="cw_dot cw_green">&#8226;</span>Rich
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">rich@tripod.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:rich@tripod.com">rich@tripod.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cw_name">
+				<span class="cw_dot cw_green">&#8226;</span>Scott
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">scott@mailinator.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:scott@yahoo.com">scott@mailinator.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li class="cw_alternate">
+			<div class="cw_name">
+				<span class="cw_dot cw_green">&#8226;</span>Danny
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">danny@hotmail.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:danny@hotmail.com">danny@hotmail.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cw_name">
+				<span class="cw_dot cw_red">&#8226;</span>Taka
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">taka@myspace.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:taka@myspace.com">taka@myspace.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>		
+		</li>
+		<li class="cw_alternate">
+			<div class="cw_name">
+				<span class="cw_dot cw_yellow">&#8226;</span>Tim
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">tim@netscape.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:tim@netscape.com">tim@netscape.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cw_name">
+				<span class="cw_dot cw_green">&#8226;</span>Patrick
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">patrick@live.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:patrick@live.com">patrick@live.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>
+		<li class="cw_alternate">
+			<div class="cw_name">
+				<span class="cw_dot cw_yellow">&#8226;</span>Jacques
+			</div>
+			<div class="cw_info">
+				<div class="cw_email">jacques@aol.com</div>
+				<div class="cw_telephone">323-555-1234</div>
+				<div class="cw_details">
+					<a href="mailto:jacques@aol.com">jacques@aol.com</a>
+					<p>555.555.5555</p>
+					<p>6539 Wilton Ave.<br/>Culver City CA 90234</p>
+				</div>
+			</div>
+		</li>		
+	</ul>
+	<select id="cw_select">
+		<option value="email" selected="selected">Email address</option>
+		<option value="telephone">Phone number</option>
+	</select>
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* resets */
+#contact_widget,
+#contact_widget ul, 
+#contact_widget li,
+#contact_widget h3,
+#contact_widget p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-indent: 0;
+}
+
+#contact_widget {
+	z-index: 1;
+	font-family: Helvetica, Arial, sans serif;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 1px;
+	width: 280px;
+	height: 400px;
+	background-color: #212121;
+	position: relative;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: -2px 5px 3px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    -2px 5px 3px rgba(50, 50, 50, 0.2);
+	box-shadow:         -2px 5px 3px rgba(50, 50, 50, 0.2);
+}
+
+#contact_widget h3 {
+	padding-left: 15px;
+	line-height: 55px;
+	font-size: 14px;
+	font-weight: bold;
+	height: 50px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #212121;
+	background: 		-webkit-gradient(linear, 0% 0%, 0% 100%, from(#3c3c3c), to(#212121)); 
+	/* Safari 5.1, Chrome 10+ */ 
+	background: 		-webkit-linear-gradient(top, #3c3c3c, #212121);
+	/* Firefox 3.6+ */
+	background: 		-moz-linear-gradient(top, #3c3c3c, #212121); 
+	/* IE 10 */ 
+	background: 		-ms-linear-gradient(top, #3c3c3c, #212121); 
+	/* Opera 11.10+ */ 
+	background: 		-o-linear-gradient(top, #3c3c3c, #212121); 	
+}
+
+#contact_widget ul,
+#contact_widget li {
+	z-index: 10;
+	border: solid 1px #050505;
+	border-left: none;
+	border-right: none;
+}
+
+#contact_widget ul {
+	list-style-type: none;
+}
+
+#contact_widget li {
+	height: 35px;
+	line-height: 35px;
+	clear: both;
+	display: block;
+}
+
+.cw_alternate {
+	background-color: #1a1a1a;
+}
+
+.cw_name {
+	width: 93px;
+	float: left;
+	border-right: solid 2px #050505;
+	margin-left: 15px;
+}
+
+.cw_info {
+	float: left;
+	width: 170px;
+}
+
+#contact_widget .cw_dot {
+	font-size: 30px;
+	line-height: 12px;
+	position: relative;
+	top: 6px;
+	margin-right: 10px;
+}
+
+#contact_widget select {
+	float: right;
+	z-index: 1;
+	margin: 15px 15px 0px 0px;
+	width: 120px;
+	letter-spacing: 0px;
+}
+
+#contact_widget option {
+	padding-left: 5px;
+}
+
+#contact_widget a,
+#contact_widget a:visited {
+	text-decoration: underline;
+	color: cyan;
+}
+
+.cw_email,
+.cw_telephone,
+.cw_details {
+	position: absolute;
+	color: #565656;
+	width: 155px;
+	padding-left: 15px;
+}
+
+.cw_details {
+	color: #fff;
+	z-index: 10;
+	background-color: #484848;
+	padding-bottom: 5px;
+	display: none;
+}
+
+#contact_widget .cw_details p {
+	line-height: 15px;
+	margin-bottom: 8px;
+}
+
+#cw_list:hover li {				background-color: #050505; color: #333 }
+#cw_list:hover .cw_email, 
+#cw_list:hover .cw_telephone { 	color: #050505 }
+
+.cw_email_state .cw_telephone {							display: none; }
+.cw_telephone_state .cw_email {							display: none; }
+.cw_telephone_state .cw_telephone {						display: block; }
+.cw_email_state .cw_email {								display: block; }
+
+#cw_list li:hover .cw_details {					display: block; }
+#cw_list:hover li:hover, 
+#cw_list li:hover {								background-color: #484848; color: #fff }
+#cw_list li:hover .cw_name { 					border-color: #484848; }
+
+.cw_green, #cw_list:hover li:hover .cw_green { 		color: #00ff00; }
+.cw_red, #cw_list:hover li:hover .cw_red {			color: #ff0000; }
+.cw_yellow, #cw_list:hover li:hover .cw_yellow {	color: #ffff00; }
+
+#cw_list:hover .cw_green {		color: #003300; }
+#cw_list:hover .cw_red {		color: #330000; }
+#cw_list:hover .cw_yellow {		color: #333300; }
+
+
+
+
